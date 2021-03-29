@@ -21,13 +21,18 @@ const CatSection = () => {
   });
   const [catFact, setCatFact] = useState<CatFact>({ loading: false, fact: "" });
 
+  const params = {
+    headers: { "x-api-key": process.env.REACT_APP_CATS_API_KEY },
+  };
+
   const getCatPicture = async () => {
     setCatPicture({ loading: true, url: "" });
     const catPictureAPIUrl =
       "https://api.thecatapi.com/v1/images/search?limit=1";
-    const response = await axios.get<[{ url: string }]>(catPictureAPIUrl, {
-      headers: { "x-api-key": process.env.REACT_APP_CATS_API_KEY },
-    });
+    const response = await axios.get<[{ url: string }]>(
+      catPictureAPIUrl,
+      params
+    );
     setCatPicture({ loading: false, url: response.data[0].url });
   };
 

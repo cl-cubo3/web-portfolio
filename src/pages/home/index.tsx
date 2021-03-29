@@ -24,7 +24,7 @@ const Home = () => {
           <MainIcon>
             <FontAwesomeIcon
               className="mb-2"
-              icon={["fas", "laptop-code"]}
+              icon={["fas", "cat"]}
               size="10x"
               color="#61dafb"
             />

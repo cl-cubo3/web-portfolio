@@ -4,6 +4,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 
 import {
   faArrowRight,
+  faCat,
   faChalkboard,
   faChalkboardTeacher,
   faCopyright,
@@ -19,6 +20,7 @@ import {
 library.add(
   faArrowRight,
   fab,
+  faCat,
   faChalkboard,
   faChalkboardTeacher,
   faCopyright,

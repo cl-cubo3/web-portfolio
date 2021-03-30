@@ -29,6 +29,7 @@ const Education = () => {
                 className="mb-3"
                 icon={["fas", "laptop-code"]}
                 size="8x"
+                color="#f9e64f"
               />
               <br />
               <h4>Computer Science Engineering</h4>
@@ -44,6 +45,7 @@ const Education = () => {
                 className="mb-3"
                 icon={["fas", "chalkboard"]}
                 size="8x"
+                color="#f9e64f"
               />
               <br />
               <h4>English Teacher</h4>
@@ -61,6 +63,7 @@ const Education = () => {
                 className="mb-3"
                 icon={["fas", "globe-americas"]}
                 size="8x"
+                color="#f9e64f"
               />
               <br />
               <h4>Education</h4>

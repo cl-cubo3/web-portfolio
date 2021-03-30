@@ -33,11 +33,13 @@ const Experience = () => {
                 className="mb-3"
                 icon={["fab", "react"]}
                 size="6x"
+                color="#f9e64f"
               />
               <FontAwesomeIcon
                 className="mb-3 ml-3"
                 icon={["fab", "node"]}
                 size="6x"
+                color="#f9e64f"
               />
               <br />
               <h4>NodeJS Developer, Jr</h4>
@@ -58,11 +60,13 @@ const Experience = () => {
                 className="mb-3"
                 icon={["fab", "php"]}
                 size="6x"
+                color="#f9e64f"
               />
               <FontAwesomeIcon
                 className="mb-3 ml-3"
                 icon={["fab", "html5"]}
                 size="6x"
+                color="#f9e64f"
               />
               <br />
               <h4>Web Developer</h4>
@@ -93,6 +97,7 @@ const Experience = () => {
                 className="mb-3"
                 icon={["fas", "chalkboard-teacher"]}
                 size="6x"
+                color="#f9e64f"
               />
               <br />
               <h4>English Teaching</h4>

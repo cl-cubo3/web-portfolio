@@ -1,7 +1,7 @@
 import { Accordion, Col, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { StyledBody, StyledCard, StyledHeader } from "shared/components/card";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StackSection = () => {
   return (

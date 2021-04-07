@@ -1,27 +1,6 @@
-import { Button, Col, Container, Form, Jumbotron, Row } from "react-bootstrap";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import styled from "styled-components";
 import { SubmitHandler, useForm } from "react-hook-form";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-const ContactInfo = styled(Jumbotron)`
-  background-color: #292d3e;
-  color: white;
-  text-align: center;
-`;
-
-const InfoBox = styled.div`
-  margin-bottom: 1rem;
-`;
-
-const Info = styled.h6`
-  color: #bfc7d5;
-  display: inline;
-`;
-
-const Title = styled.h6`
-  display: inline;
-`;
 
 const StyledCol = styled(Col)`
   background-color: #292d3e;
@@ -49,7 +28,7 @@ interface FormValue {
   message: string;
 }
 
-const Contact = () => {
+const ContactForm = () => {
   const { errors, handleSubmit, register, setValue } = useForm<FormValue>();
 
   const clearInputs = () => {
@@ -64,44 +43,6 @@ const Contact = () => {
 
   return (
     <>
-      <ContactInfo>
-        <h5>Contact Info</h5>
-        <br />
-        <InfoBox>
-          <Title style={{ display: "inline" }}>
-            <FontAwesomeIcon icon={["fas", "map-pin"]} />
-            &nbsp;Adress:
-          </Title>
-          <Info>&nbsp;Santiago 1320, Depto 816, Santiago</Info>
-        </InfoBox>
-        <InfoBox>
-          <Title>
-            <FontAwesomeIcon icon={["fas", "mobile-alt"]} />
-            &nbsp;Phone:
-          </Title>
-          <Info>&nbsp;+56 9 9992 0253</Info>
-        </InfoBox>
-        <InfoBox>
-          <Title>
-            <FontAwesomeIcon icon={["fas", "inbox"]} />
-            &nbsp;Email:
-          </Title>
-          <Info>&nbsp;claudio.lc@live.cl</Info>
-        </InfoBox>
-        <InfoBox>
-          <a href="https://www.linkedin.com/in/claudio-leivacabello/">
-            <FontAwesomeIcon icon={["fab", "linkedin"]} size="2x" />
-          </a>
-          &nbsp;
-          <a href="https://www.instagram.com/marraqqueta/">
-            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
-          </a>
-          &nbsp;
-          <a href="https://twitter.com/marraqqueta">
-            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
-          </a>
-        </InfoBox>
-      </ContactInfo>
       <Container>
         <Row className="justify-content-md-center">
           <TitleForm>Send me a message</TitleForm>
@@ -174,4 +115,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

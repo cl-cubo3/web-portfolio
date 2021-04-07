@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const StyledCard = styled(Card)`
   border: 1px solid #1f212e;
   color: #bfc7d5;
+  background-color: transparent;
 `;
 
 export const StyledHeader = styled(Card.Header)`

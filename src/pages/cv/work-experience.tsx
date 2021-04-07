@@ -1,8 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { StyledCard, StyledHeader, StyledBody } from "shared/components/card";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Title = styled.h2`
   color: white;

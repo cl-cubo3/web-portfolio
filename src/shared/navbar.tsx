@@ -1,7 +1,6 @@
 import { Nav, Navbar } from "react-bootstrap";
 import styled from "styled-components";
 import { LinkContainer } from "react-router-bootstrap";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = styled(Navbar)`
